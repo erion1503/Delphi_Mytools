@@ -37,7 +37,13 @@ type
     cmdRespoProgrDelete: TButton;
     cmdRegist: TButton;
     cmdBack: TButton;
-    procedure cmdBackClick(Sender: TObject);
+    txtFixDate: TEdit;
+    cboFixStatus: TComboBox;
+    lblEtcPart: TLabel;
+    lstEtcPartRegistPart: TListBox;
+    lstEtcPartRegistCandiate: TListBox;
+    cmdEtcPartAdd: TButton;
+    cmdEtcPartDelete: TButton;
   private
     { Private êÈåæ }
   public
@@ -49,14 +55,6 @@ var
 
 implementation
 
-uses Unit1;
-
 {$R *.dfm}
-
-procedure TfrmRegist.cmdBackClick(Sender: TObject);
-begin
-    frmMenu.Show;
-    frmRegist.Hide;
-end;
 
 end.

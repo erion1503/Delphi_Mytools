@@ -1,6 +1,6 @@
 object frmRegist: TfrmRegist
-  Left = 350
-  Top = 322
+  Left = 454
+  Top = 372
   Width = 1305
   Height = 587
   Caption = #30331#37682#30011#38754
@@ -13,6 +13,13 @@ object frmRegist: TfrmRegist
   OldCreateOrder = False
   PixelsPerInch = 120
   TextHeight = 15
+  object lblEtcPart: TLabel
+    Left = 488
+    Top = 328
+    Width = 74
+    Height = 15
+    Caption = #12381#12398#20182#21306#20998
+  end
   object txtQuestDate: TEdit
     Left = 8
     Top = 16
@@ -27,7 +34,7 @@ object frmRegist: TfrmRegist
     Width = 153
     Height = 23
     TabOrder = 1
-    Text = #21839#12356#21512#12431#12379#26085#20184
+    Text = #21839#12356#21512#12431#12379#26178#38291
   end
   object cboPetHospitalName: TComboBox
     Left = 8
@@ -149,6 +156,12 @@ object frmRegist: TfrmRegist
     Width = 393
     Height = 281
     TabOrder = 10
+    ColWidths = (
+      64
+      64
+      61
+      95
+      64)
   end
   object pnlRespoProgrInput: TPanel
     Left = 888
@@ -244,6 +257,54 @@ object frmRegist: TfrmRegist
     Height = 25
     Caption = #25147#12427
     TabOrder = 13
-    OnClick = cmdBackClick
+  end
+  object txtFixDate: TEdit
+    Left = 488
+    Top = 304
+    Width = 145
+    Height = 23
+    TabOrder = 14
+    Text = #23436#20102#26085
+  end
+  object cboFixStatus: TComboBox
+    Left = 720
+    Top = 304
+    Width = 161
+    Height = 23
+    ItemHeight = 15
+    TabOrder = 15
+    Text = #23436#20102#12473#12486#12540#12479#12473
+  end
+  object lstEtcPartRegistPart: TListBox
+    Left = 488
+    Top = 352
+    Width = 145
+    Height = 137
+    ItemHeight = 15
+    TabOrder = 16
+  end
+  object lstEtcPartRegistCandiate: TListBox
+    Left = 736
+    Top = 352
+    Width = 145
+    Height = 137
+    ItemHeight = 15
+    TabOrder = 17
+  end
+  object cmdEtcPartAdd: TButton
+    Left = 656
+    Top = 360
+    Width = 65
+    Height = 25
+    Caption = #8592#36861#21152
+    TabOrder = 18
+  end
+  object cmdEtcPartDelete: TButton
+    Left = 656
+    Top = 424
+    Width = 65
+    Height = 25
+    Caption = #21066#38500#8594
+    TabOrder = 19
   end
 end
